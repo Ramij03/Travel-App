@@ -17,7 +17,7 @@ const Recommendation = () => {
     useEffect(() => {
         const fetchRecommendations = async () => {
             try {
-                const response = await axios.get('http://192.168.1.12:3000/api/place/get-places'); 
+                const response = await axios.get('http://localhost:3000/api/place/get-places'); 
                 setRecommendations(response.data.data); // Access the data correctly
             } catch (err) {
                 console.error("Error fetching recommendations:", err);
