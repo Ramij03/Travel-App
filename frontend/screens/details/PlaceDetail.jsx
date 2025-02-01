@@ -19,7 +19,7 @@ const PlaceDetail = ({ navigation }) => {
   useEffect(() => {
     const fetchPlaceDetails = async () => {
       try {
-          const response = await axios.get(`http://192.168.1.12:3000/api/place/get-place/${id}`);
+          const response = await axios.get(`http://localhost:3000/api/place/get-place/${id}`);
           console.log("Fetched Place Data:", response.data); // Log the response
           setPlace(response.data.place); // Adjust according to your API's response structure
       } catch (err) {
