@@ -17,7 +17,7 @@ const BestHotels = () => {
     useEffect(() => {
         const fetchHotels = async () => {
             try {
-                const response = await axios.get('http://192.168.1.12:3000/api/hotel/get-hotels'); // Change to your actual endpoint
+                const response = await axios.get('http://localhost:3000/api/hotel/get-hotels'); // Change to your actual endpoint
                 setHotels(response.data.hotels); // Adjust based on your API response structure
             } catch (err) {
                 console.error("Error fetching hotels:", err);
