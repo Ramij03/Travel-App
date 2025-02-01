@@ -18,7 +18,7 @@ const CountryDetail = ({ navigation }) => {
     console.log("Country ID:", id);
     const fetchCountry = async () => {
       try {
-        const response = await axios.get(`http://192.168.1.12:3000/api/country/get-country/${id}`);
+        const response = await axios.get(`http://localhost:3000/api/country/get-country/${id}`);
       
         setCountry(response.data.data); // Set the country data
         console.log(response.data.data);
