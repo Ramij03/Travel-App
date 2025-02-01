@@ -13,7 +13,7 @@ const Places = () => {
     useEffect(() => {
       const fetchCountries = async () => {
         try {
-            const response = await axios.get('http://192.168.1.12:3000/api/country/get-countries'); // Update with your IP
+            const response = await axios.get('http://localhost:3000/api/country/get-countries'); // Update with your IP
             
             setCountries(response.data.data); // Set the countries from response
         } catch (error) {
