@@ -20,7 +20,7 @@ const HotelDetail = ({ navigation }) => {
   useEffect(() => {
     const fetchHotelDetails = async () => {
       try {
-        const response = await axios.get(`http://192.168.1.12:3000/api/hotel/get-hotel/${id}`);
+        const response = await axios.get(`http://localhost:3000/api/hotel/get-hotel/${id}`);
         setHotel(response.data.hotel);
       } catch (err) {
         console.error("Error fetching hotel details:", err);
